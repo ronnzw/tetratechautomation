@@ -1,3 +1,10 @@
+.btn-primary{
+    transition: transform 0.2s ease-in-out !important;
+}
+.btn-primary:hover{
+    transform: scale(1.1) !important;
+    filter: brightness(90%) !important;
+}
 .c-item{
     height: 500px;
 }
@@ -6,34 +13,36 @@
     object-fit: cover;
     filter: brightness(0.6);
 }
-
-/*
-
-$carousel-control-color:             $white;
-$carousel-control-width:             15%;
-$carousel-control-opacity:           .5;
-$carousel-control-hover-opacity:     .9;
-$carousel-control-transition:        opacity .15s ease;
-
-$carousel-indicator-width:           30px;
-$carousel-indicator-height:          3px;
-$carousel-indicator-hit-area-height: 10px;
-$carousel-indicator-spacer:          3px;
-$carousel-indicator-opacity:         .5;
-$carousel-indicator-active-bg:       $white;
-$carousel-indicator-active-opacity:  1;
-$carousel-indicator-transition:      opacity .6s ease;
-
-$carousel-caption-width:             70%;
-$carousel-caption-color:             $white;
-$carousel-caption-padding-y:         1.25rem;
-$carousel-caption-spacer:            1.25rem;
-
-$carousel-control-icon-width:        2rem;
-
-$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
-$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
-
-$carousel-transition-duration:       .6s;
-$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
-*/
+.card-icon{
+    margin: 0 1rem;
+    align-self: center;
+}
+.card-icon i{
+    font-size: 3rem;
+}
+.card-item{
+    background-color: #3286EC;
+    color: whitesmoke;
+    padding: 3em 0;
+    border: 1;
+    border-radius: 4em 0;
+    background: linear-gradient(to left, #3286EC 50%, #8c8c8c 50%);
+    background-size: 200%;
+    background-position: right;
+    transition: all 0.5s ease;
+}
+.card-item:hover{
+    background-position: left;
+}
+.background-div {
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    background-image: url('../img/aiTech.jpg'); /* Specify the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    filter: brightness(0.9);
+ /* Center the background image */
+    /* Additional styles if needed */
+}
