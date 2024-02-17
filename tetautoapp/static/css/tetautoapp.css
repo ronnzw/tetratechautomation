@@ -46,3 +46,31 @@
  /* Center the background image */
     /* Additional styles if needed */
 }
+.single-box{
+    position:relative;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: 80px;
+}
+.img-area{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.img-area img{
+    width: 100%;
+    height: auto;
+}
+.cardheader{
+    background:#8c8c8c ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-variant-caps: titling-caps;
+}
+.cardfooter{
+    background: #3286EC;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
