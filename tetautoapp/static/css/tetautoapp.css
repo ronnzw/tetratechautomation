@@ -74,3 +74,27 @@
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.imghover{
+    transition: all 0.3s;
+}
+.imghover:hover{
+    transform: scale(1.05);
+}
+hr {
+    border: none;
+    height: 2px; /* Adjust height as needed */
+    background-color: #3286EC; /* Adjust color as needed */
+    width: 100%; /* Adjust width as needed */
+    margin: 20px auto; /* Center horizontally and add space vertically */
+}
+.masterhead{
+    background-image: url('../img/electronicEng.jpg');
+    background-size: cover;
+    min-height: 60vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    color: #3286EC;
+    z-index: -1;
+    filter: brightness(0.9);
+}
