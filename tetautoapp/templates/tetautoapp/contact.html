@@ -1,0 +1,19 @@
+{% extends 'tetautoapp/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="contanier">
+    <div class="row">
+        <div class="col-6 offset-3 bg-info text-bg-dark">
+        <h2>Contact Us</h2>
+
+            <form method="POST">
+                {% csrf_token %}
+                {% crispy form %}
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
