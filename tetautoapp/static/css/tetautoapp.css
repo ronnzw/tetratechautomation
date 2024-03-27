@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden !important;
+}
 .btn-primary{
     transition: transform 0.2s ease-in-out !important;
 }

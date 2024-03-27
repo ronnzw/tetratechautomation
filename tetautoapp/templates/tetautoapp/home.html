@@ -11,28 +11,28 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active c-item" data-bs-interval="6000">       
-        <img src="static/img/roblambert.jpg" class="d-block w-100 c-img" alt="...">
+        <img src="{% static 'img/roblambert.jpg' %}" class="d-block w-100 c-img" alt="...">
         <div class="carousel-caption top-0 mt-4">
             <p class="animate__animated animate__slideInDown animate_slower mt-5 fs-3 text-uppercase"> Electrical & instrumentation services</p>
             <h1 class="animate__animated animate__slideInUp display-1 fw-bolder text-capitalize">Engineering Services</h1>
             <br>
-            <button type="button" class="animate__animated animate__rotateInUpRight btn btn-primary btn-lg rounded-pill" style="background-color: #3286ec;">Contact Us</button>
+            <a href="{% url 'tetautoapp:contact' %}"> <button type="button" class="animate__animated animate__rotateInUpRight btn btn-primary btn-lg rounded-pill" style="background-color: #3286ec;">Contact Us</button></a>
         </div> 
       </div>
       <div class="carousel-item c-item" data-bs-interval="6000">
-        <img src="static/img/mostafa.jpg" class="d-block w-100 c-img" alt="...">
+        <img src="{% static 'img/mostafa.jpg' %}" class="d-block w-100 c-img" alt="...">
         <div class="carousel-caption top-0 mt-4">
             <p class="animate__animated animate__slideInDown mt-5 fs-3 text-uppercase">we deliver quality, safety & productivity<p>
             <h1 class="animate__animated animate__slideInUp display-1 fw-bolder text-capitalize">Project management</h1><br>
-            <button type="button" class="animate__animated animate__rotateInUpRight btn btn-primary btn-lg rounded-pill btn-onhover" style="background-color: #3286ec;">Our clients</button>
+             <a href="{% url 'tetautoapp:cliental' %}"> <button type="button" class="animate__animated animate__rotateInUpRight btn btn-primary btn-lg rounded-pill btn-onhover" style="background-color: #3286ec;">Our clients</button></a>
         </div>         
       </div>
       <div class="carousel-item c-item">
-        <img src="static/img/thisisengineering.jpg" class="d-block w-100 c-img" alt="...">
+        <img src="{% static 'img/thisisengineering.jpg' %}" class="d-block w-100 c-img" alt="...">
         <div class="carousel-caption top-0 mt-4">
             <p class="animate__animated animate__slideInDown mt-5 fs-3 text-uppercase">Realiable supplier of quality products</p>
             <h1 class="animate__animated animate__slideInUp display-1 fw-bolder text-capitalize">Procurement services</h1><br>
-            <button type="button" class="animate__animated animate__rotateInUpRight btn btn-primary btn-onhover btn-lg rounded-pill" style="background-color: #3286ec;">Our services</button>
+             <a href="{% url 'tetautoapp:ourServices' %}"> <button type="button" class="animate__animated animate__rotateInUpRight btn btn-primary btn-onhover btn-lg rounded-pill" style="background-color: #3286ec;">Our services</button></a>
         </div>         
       </div>
     </div>
@@ -103,46 +103,22 @@
                           <div class="row">
                             <div class="col-md-3">
                               <div class="single-box">
-                                <div class="img-area"><img src="static/img/Siemens logo.jpg" alt="logo"></div>
+                                <div class="img-area"><img src="{% static 'img/Siemens logo.jpg' %}" alt="logo"></div>
                               </div>
                             </div>
                             <div class="col-md-3">
                               <div class="single-box">
-                                <div class="img-area"><img src="static/img/schneider.jpg" alt="logo"></div>
+                                <div class="img-area"><img src="{% static 'img/schneider.jpg' %}" alt="logo"></div>
                               </div>
                             </div>
                             <div class="col-md-3">
                               <div class="single-box">
-                                <div class="img-area"><img src="static/img/Omron.jpg" alt="logo"></div>
+                                <div class="img-area"><img src="{% static 'img/Omron.jpg' %}" alt="logo"></div>
                               </div>
                             </div>
                             <div class="col-md-3">
                               <div class="single-box">
-                                <div class="img-area"><img src="static/img/TOSHIBA.jpg" alt="logo"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="carousel-item">
-                          <div class="row">
-                            <div class="col-md-3">
-                              <div class="single-box">
-                                <div class="img-area"><img src="static/img/SIBA.jpg" alt="logo"></div>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="single-box">
-                                <div class="img-area"><img src="static/img/ABB.jpg" alt="logo"></div>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="single-box">
-                                <div class="img-area"><img src="static/img/COOPER BUSSMAN.jpg" alt="logo"></div>
-                              </div>
-                            </div>
-                            <div class="col-md-3">
-                              <div class="single-box">
-                                <div class="img-area"><img src="static/img/Danfoss.jpg" alt="logo"></div>
+                                <div class="img-area"><img src="{% static 'img/TOSHIBA.jpg' %}" alt="logo"></div>
                               </div>
                             </div>
                           </div>
@@ -151,22 +127,46 @@
                           <div class="row">
                             <div class="col-md-3">
                               <div class="single-box">
-                                <div class="img-area"><img src="static/img/Delta.jpg" alt="logo"></div>
+                                <div class="img-area"><img src="{% static 'img/SIBA.jpg' %}" alt="logo"></div>
                               </div>
                             </div>
                             <div class="col-md-3">
                               <div class="single-box">
-                                <div class="img-area"><img src="static/img/Weg.jpg" alt="logo"></div>
+                                <div class="img-area"><img src="{% static 'img/ABB.jpg' %}" alt="logo"></div>
                               </div>
                             </div>
                             <div class="col-md-3">
                               <div class="single-box">
-                                <div class="img-area"><img src="static/img/Rosemount.jpg" alt="logo"></div>
+                                <div class="img-area"><img src="{% static 'img/COOPER BUSSMAN.jpg' %}" alt="logo"></div>
                               </div>
                             </div>
                             <div class="col-md-3">
                               <div class="single-box">
-                                <div class="img-area"><img src="static/img/Festo.jpg" alt="logo"></div>
+                                <div class="img-area"><img src="{% static 'img/Danfoss.jpg' %}" alt="logo"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="row">
+                            <div class="col-md-3">
+                              <div class="single-box">
+                                <div class="img-area"><img src="{% static 'img/Delta.jpg' %}" alt="logo"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="single-box">
+                                <div class="img-area"><img src="{% static 'img/Weg.jpg' %}" alt="logo"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="single-box">
+                                <div class="img-area"><img src="{% static 'img/Rosemount.jpg' %}" alt="logo"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="single-box">
+                                <div class="img-area"><img src="{% static 'img/Festo.jpg' %}" alt="logo"></div>
                               </div>
                             </div>
                           </div>
@@ -209,7 +209,7 @@
     </div>
 
     <div class="col-md-5">
-        <img class="img-fluid imghover img-thumbnail" src="static/img/emnu.jpg"/>
+        <img class="img-fluid imghover img-thumbnail" src="{% static 'img/emnu.jpg' %}"/>
     </div>
   </div>
 
@@ -229,7 +229,7 @@
      </ul>
     </div>
     <div class="col-md-5 order-md-1 pl-2">
-        <img class="img-fluid imghover img-thumbnail" src="static/img/bernd.jpg"/>
+        <img class="img-fluid imghover img-thumbnail" src="{% static 'img/bernd.jpg' %}"/>
     </div>
   </div>
 
@@ -249,7 +249,7 @@
     
     </div>
     <div class="col-md-5">
-        <img class="img-fluid imghover img-thumbnail" src="static/img/minku.jpg"/>
+        <img class="img-fluid imghover img-thumbnail" src="{% static 'img/minku.jpg' %}"/>
     </div>
   </div>
 
@@ -262,7 +262,7 @@
       <p>Our automation systems give you visibility inot your Power Suppyly system, as well as crtical parameters such as Power Factor and Power Consumption.</p>
     </div>
     <div class="col-md-5 order-md-1 pl-2">
-        <img class="img-fluid imghover img-thumbnail" src="static/img/sub.jpg"/>
+        <img class="img-fluid imghover img-thumbnail" src="{% static 'img/sub.jpg' %}"/>
     </div>
   </div>
 

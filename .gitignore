@@ -8,11 +8,12 @@ __pycache__
 tetraa/
 venv/
 
+
 # Database
 db.sqlite3
 
 # Static folder at project root
-/static/
+/staticfiles/
 
 # macOS
 ._*
